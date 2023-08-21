@@ -1,17 +1,12 @@
-local placeId = game.PlaceId
-local url = "https://raw.githubusercontent.com/neowaree/free-version/main/CustomModules/" .. placeId .. ".lua"
+if true then
+    repeat wait() until game:IsLoaded()
 
-local success, scriptContent = pcall(game.HttpGet, game, game, url)
+    game:GetService("Players").LocalPlayer.Idled:Connect(function()
+        game:GetService("VirtualUser"):ClickButton2(Vector2.new())
+    end)
 
-if success then
-    local loadFunction = loadstring or load
-    local loadedScript = loadFunction(scriptContent)
-    
-    if loadedScript then
-        loadedScript()
-    else
-        warn("Failed to load script content from the URL.")
-    end
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/neowaree/free-version/main/CustomModules/" .. game.PlaceId .. ".lua", true))()
 else
-    warn("Failed to fetch script content from the URL.")
+    game.Players.LocalPlayer:Kick("Game Isn't Supported. Request The Game At https://discord.gg/mMBVhq4gnZ")
+    return
 end
