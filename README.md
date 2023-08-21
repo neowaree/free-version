@@ -1,6 +1,6 @@
 # neoware
 
-Welcome to the Neowaree Free Version repository! This repository contains custom modules for various games. The modules have been tested on different games and their compatibility status is indicated below:
+Welcome to the neoware repository! This repository contains custom modules for various games. The modules have been tested on different games and their compatibility status is indicated below:
 
 ## Supported Games
 
