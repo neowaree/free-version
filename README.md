@@ -14,6 +14,8 @@ Welcome to the neoware repository! This repository contains custom modules for v
 - Last Pirates 🟢
 - Slayer Tycoon 🟢
 - Vietnam Piece 🟢
+## Unreleased
+- My Hero Mania
 
 **Key:**
 🟢 = Working
