@@ -26,6 +26,7 @@
 ~Scripter: sadawrf
 ]]
 function neoware()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/neowaree/free-version/main/Assets/114209385120.lua",true))()
 game.StarterGui:SetCore("ChatMakeSystemMessage", {Text =   "Thank you for using neoware!", Color = Color3.fromRGB(255, 255, 255), Font = Enum.Font.GothamBold, FontSize = Enum.FontSize.Size24})
 game.StarterGui:SetCore("ChatMakeSystemMessage", {Text =   "https://discord.gg/mMBVhq4gnZ", Color = Color3.fromRGB(3, 69, 252), Font = Enum.Font.SourceSansBold, FontSize = Enum.FontSize.Size24})
 end
