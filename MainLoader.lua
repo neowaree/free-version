@@ -25,11 +25,20 @@
 ~Founder : Rick Astley
 ~Scripter: sadawrf
 ]]
-function neoware()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/neowaree/free-version/main/Assets/114209385120.lua",true))()
-game.StarterGui:SetCore("ChatMakeSystemMessage", {Text =   "Thank you for using neoware!", Color = Color3.fromRGB(255, 255, 255), Font = Enum.Font.GothamBold, FontSize = Enum.FontSize.Size24})
-game.StarterGui:SetCore("ChatMakeSystemMessage", {Text =   "https://discord.gg/mMBVhq4gnZ", Color = Color3.fromRGB(3, 69, 252), Font = Enum.Font.SourceSansBold, FontSize = Enum.FontSize.Size24})
-end
+spawn(function()
+    game.StarterGui:SetCore("ChatMakeSystemMessage", {
+        Text = "Thank you for using neoware!",
+        Color = Color3.fromRGB(255, 255, 255),
+        Font = Enum.Font.GothamBold,
+        FontSize = Enum.FontSize.Size24
+    })
+    game.StarterGui:SetCore("ChatMakeSystemMessage", {
+        Text = "https://discord.gg/mMBVhq4gnZ",
+        Color = Color3.fromRGB(3, 69, 252),
+        Font = Enum.Font.SourceSansBold,
+        FontSize = Enum.FontSize.Size24
+    })
+end)
 
 if true then
     repeat wait() until game:IsLoaded()
@@ -37,9 +46,8 @@ if true then
     game:GetService("Players").LocalPlayer.Idled:Connect(function()
         game:GetService("VirtualUser"):ClickButton2(Vector2.new())
     end)
-
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/neowaree/free-version/main/CustomModules/" .. game.PlaceId .. ".lua", true))()
-    neoware()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/neowaree/free-version/main/Assets/114209385120.lua", true))() -- \\ Anti-Cheat
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/neowaree/free-version/main/CustomModules/" .. game.PlaceId .. ".lua", true))() -- \\ Main Loader
 else
     game.Players.LocalPlayer:Kick("Game Isn't Supported. Request The Game At https://discord.gg/mMBVhq4gnZ")
     return
