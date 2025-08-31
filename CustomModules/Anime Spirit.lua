@@ -7,4 +7,4 @@ elseif placeId == 73417524077325 or placeId == 16041086429 or placeId == 1175603
    loadstring(game:HttpGet("https://raw.githubusercontent.com/neowaree/free-version/refs/heads/main/Anime%20Spirit"))()
 else
     warn("This place ID is not recognized by the script.")
-end
+end ---test
